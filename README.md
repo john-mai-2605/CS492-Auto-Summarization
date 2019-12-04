@@ -18,3 +18,9 @@ Reproduce and Develop the ACL 2017 paper "Get To The Point: Summarization with P
   - Decoder: Unidirectional RNNs with GRU cells, use greedy search in testing
   - Attention: Bahdanau Attention with coverage
   - Tensorflow 2, Python 3
+## Model: seq2seq with pointer and coverage
+  - Word embedding: embedding layer
+  - Encoder: Unidirectional (the code creates bidirectional but only use forward states) RNNs with LSTM cells
+  - Decoder: Unidirectional RNNs with GRU cells, pointer network and use greedy/beam search in testing
+  - Attention: Bahdanau Attention with coverage (can be turned off))
+  - Tensorflow 2, Python 3
